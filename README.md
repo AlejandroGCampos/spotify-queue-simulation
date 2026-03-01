@@ -1,6 +1,6 @@
 # spotify-queue-simulation
 ## 1️ Cómo compilar la librería
-### 🔹 Desde consola
+### Desde consola
 1. Abrir una terminal.
 2. Ubicarse en la raíz del proyecto `queue` (donde se encuentra el `pom.xml`).
 ```mvn clean compile```
