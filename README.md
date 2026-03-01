@@ -79,8 +79,8 @@ Esto facilita mantenimiento y reutilización.
 ## 7️ Cómo implementaste la prioridad
 Se declararon dos colas independientes: 
 ```
-private QueueLinked<Song> highPriority;
-private QueueLinked<Song> normalPriority;
+private QueueLinked<Song> highPriority = new QueueLinked<>();
+private QueueLinked<Song> normalPriority = new QueueLinked<>();
 ```
 Al agregar una canción:
 ```
@@ -100,7 +100,7 @@ Esto garantiza que las canciones importantes se ejecuten primero.
 La duración de cada canción se simula utilizando un ciclo:
 ```
 for (int i = 1; i <= song.getDuration(); i++) {
-    Thread.sleep(1000);
+    Thread.sleep(1000); // 1 segundo real
 }
 ```
 Cada iteración representa un segundo real.
